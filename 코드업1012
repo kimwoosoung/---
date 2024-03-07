@@ -1,0 +1,8 @@
+#include <stdio.h>
+void main() 
+{
+	float x;
+    x:1.414213;
+	scanf("%f", &x);
+ 	printf("%f", x);
+}
