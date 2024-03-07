@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(void) {
+    printf("special characters \n[\\n,\\\",\\\\] is very important.");
+    return 0;
+}
