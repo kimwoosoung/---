@@ -1,0 +1,16 @@
+
+#include<stdio.h>
+ 
+int main(void)
+{
+    char data[51]="";
+    scanf("%s",&data);
+    printf("%s", data);
+ 
+    return 0;
+}
+
+배열에 문자를 입력하여 출력하는 예제입니다. 
+입력 조건에 한 단어가 입력된다.(단, 단어의 길이는 50자 이하이다.)라는 조건이 있습니다.
+그러면 char data[50]으로 알고 있지만 문자열 맨 마지막에 붙는 NULL문자까지 포함하여야 하므로
+char data[51]로 배열 크기를 잡아주셔야 합니다.
