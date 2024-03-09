@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void)
+{
+	char d[20];
+	int i;
+	scanf("%s", &d);
+	for(i=0; d[i]!='\0'; i++){
+		printf("\'%c\'\n", d[i]);
+	}
+	
+	return 0;
+}
+
+
+※ \0: 널(NULL) 문자. '아무것도 없는'이라는 의미. 
+※ for( 1 ; 2 ; 3 ): 1에는 초기화식, 2에는 조건식 3에는 증감식이 들어감
+ex) for(i=0; d[i]!='\0'; i++) ==> 0부터 널문자가 나올 때까지 1씩 증가하여라 라는 뜻
+출처: https://staraube.tistory.com/32 [오브의 빛나는 별:티스토리]
