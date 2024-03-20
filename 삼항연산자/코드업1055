@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d %d", &a,&b);
+    printf("%d", (a == 1 || b== 1) ? 1 : 0);
+    return 0;
+}
+
+(||는 or 연산자이다.즉 둘중 하나라도 참이면 참이 출력된다.) 
