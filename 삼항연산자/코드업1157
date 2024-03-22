@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    double a;
+    scanf("%lf",&a);
+    printf("%s",50<=a && a<=60 ? "win" : "lose");
+
+    return 0;
+}
