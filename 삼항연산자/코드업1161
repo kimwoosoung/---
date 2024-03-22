@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,n;
+    scanf("%d %d",&a,&b);
+    n=a+b;
+    printf("%s+%s=%s", a % 2 == 0 ? "짝수" : "홀수", b % 2 == 0 ? "짝수" : "홀수", n % 2 == 0 ? "짝수" : "홀수");
+
+    return 0;
+}
