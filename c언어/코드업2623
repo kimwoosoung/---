@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,min;
+    int result=1;
+    scanf("%d %d", &a, &b);
+    min = (a < b) ? a : b;
+    for(int i = 2; i<=min; i++){
+        if(a % i == 0 && b % i == 0){
+            result = i;
+        }
+    }
+    printf("%d" ,result);
+    return 0;
+}
