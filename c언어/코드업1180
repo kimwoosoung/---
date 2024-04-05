@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%1d%1d",&a,&b);
+    
+    int result = b*10 + a;
+    result *= 2;
+    result = result % 100;
+    printf("%d\n",result);
+    printf("%s", result <= 50 ? "GOOD" : "OH MY GOD");
+    return 0;
+}
