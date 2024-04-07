@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int k,n;
+    scanf("%d %d",&k,&n);
+    int result=0;
+    while(k>=n){
+        result += k/n;
+        k=k/n+k%n;
+    }
+    printf("%d",result);
+    return 0;
+}
