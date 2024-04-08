@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int b(int n){
+    if(n>0){
+        return n + b(n-1);
+    }
+    else return 0;
+    
+}
+
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("%d",b(a));
+
+    return 0;
+}
