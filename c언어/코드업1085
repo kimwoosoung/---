@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void) {
+  long long int h,b,c,s;
+  scanf("%lld %lld %lld %lld",&h,&b,&c,&s);
+  double num;
+  num = (h * b * c * s);
+  printf("%.1f MB",num/8/1024/1024);
+  return 0;
+}
