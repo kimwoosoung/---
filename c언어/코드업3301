@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int a,result=0;
+    scanf("%d",&a);
+    while(a!=0){
+        if(a>=50000){
+            result+=a/50000;
+            a%=50000;
+        }
+        else if(a>=10000){
+            result+=a/10000;
+            a%=10000;
+        }
+        else if(a>=5000){
+            result+=a/5000;
+            a%=5000;
+        }
+        else if(a>=1000){
+            result+=a/1000;
+            a%=1000;
+        }
+        else if(a>=500){
+            result+=a/500;
+            a%=500;
+        }
+        else if(a>=100){
+            result+=a/100;
+            a%=100;
+        }
+        else if(a>=50){
+            result+=a/50;
+            a%=50;
+        }
+        else if(a>=10){
+            result+=a/10;
+            a%=10;
+        }
+    }
+    
+    printf("%d",result);
+    return 0;
+}
