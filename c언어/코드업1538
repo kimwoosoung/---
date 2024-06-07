@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int n;
+
+
+
+void f(int a)
+{
+  if(a%2 == 1){
+      printf("odd");
+  }
+  else if(a%2 == 0) {
+      printf("even");
+  }
+  else{
+      printf("\n");
+  }
+}
+int main()
+{
+  scanf("%d", &n);
+  f(n);
+  return 0;
+}
