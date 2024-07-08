@@ -1,0 +1,8 @@
+a = input()
+
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[3])
+print(a[4])
+출처: https://s0ng.tistory.com/entry/21 [S0NG의 정보보안 블로그:티스토리]
