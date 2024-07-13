@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n, rank=0;
+    scanf("%d",&n);
+    char name[100][100];
+    int score[50];
+    
+    for(int i=0; i<n; i++){
+        scanf("%s %d",&name[i], &score[i]);
+    }
+    
+    for(int i=0;i<n;i++) {
+        for(int j=0;j<n;j++) {
+            if(score[i]<score[j]) rank++;
+        }
+        
+        if(rank==2) {
+            printf("%s", name[i]);
+            break;
+        }
+        rank=0;
+    }
+    return 0;
+}
