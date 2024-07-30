@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void f(int k, int t) {
+    if (k == 0) {
+        return;
+    }
+
+    if (t > 0) {
+        printf("*");
+        f(k, t - 1);
+    } else {
+        printf("\n");
+        f(k - 1, k - 1);
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    f(n, n);
+
+    return 0;
+}
