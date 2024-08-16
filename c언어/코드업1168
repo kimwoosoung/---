@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+  int a,b,c,d;
+
+  scanf("%d %d",&a, &b);
+  c=a/10000;
+ 
+  if(b==1||b==2){
+    d=1900+c;
+    printf("%d",2012-d+1);
+  }else{
+    d=2000+c;
+    printf("%d",2012-d+1);
+  }
+
+  return 0;
+}
