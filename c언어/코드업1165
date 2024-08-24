@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void) {
+    int time, goal;
+    scanf("%d %d", &time, &goal);
+    while(1){
+        if(time >= 90) break;
+        goal +=1;
+        time += 5;
+    }
+    printf("%d", goal);
+    return 0;
+}
