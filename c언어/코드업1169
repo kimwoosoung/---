@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+
+    scanf("%d", &a);
+    b = 2012 - a + 1;
+    c = b % 100;
+    if (b >= 2000) {
+        d = 3;
+    } else {
+        d = 1;
+    }
+    if (c < 10) {
+        printf("%d %d\n", c, d);
+    } else {
+        printf("%d %d\n", c, d);
+    }
+
+    return 0;
+}
