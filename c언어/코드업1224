@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main (void)
+{
+    float a, b ,c ,d;
+    scanf("%f %f %f %f",&a, &b, &c, &d);
+
+    float n,m;
+
+    n = (float)(a/b);
+    m = (float)(c/d);
+
+    if(n>m){printf(">");}
+    else if(n==m){ printf("=");}
+    else{ printf("<");}
+
+    return 0;
+}
