@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main (void)
+{
+
+    int n,m;
+    char a;
+
+    scanf("%d%c%d",&n,&a,&m);
+
+    if(a == '+'){
+        printf("%d",n + m);
+    }
+    else if(a == '-'){
+        printf("%d",n-m);
+    }
+    else if(a == '*'){
+        printf("%d",n*m);
+    }
+    else if(a == '/'){
+        printf("%.2f",(float)n/m);
+    }
+
+    return 0;
+}
