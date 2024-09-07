@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main() {
+    int winning_numbers[6], bonus_number, user_numbers[6];
+    int match_count = 0, bonus_match = 0;
+    
+    for(int i = 0; i < 6; i++) {
+        scanf("%d", &winning_numbers[i]);
+    }
+    scanf("%d", &bonus_number);
+    for(int i = 0; i < 6; i++) {
+        scanf("%d", &user_numbers[i]);
+    }
+    
+    for(int i = 0; i < 6; i++) {
+        for(int j = 0; j < 6; j++) {
+            if(user_numbers[i] == winning_numbers[j]) {
+                match_count++;
+            }
+        }
+    }
+    
+    for(int i = 0; i < 6; i++) {
+        if(user_numbers[i] == bonus_number) {
+            bonus_match = 1;
+            break;
+        }
+    }
+    
+    if(match_count == 6) {
+        printf("1\n");
+    } else if(match_count == 5 && bonus_match) {
+        printf("2\n");
+    } else if(match_count == 5) {
+        printf("3\n");
+    } else if(match_count == 4) {
+        printf("4\n");
+    } else if(match_count == 3) {
+        printf("5\n");
+    } else {
+        printf("0\n");
+    }
+
+    return 0;
+}
