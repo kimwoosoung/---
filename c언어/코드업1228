@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void) {
+    double a,b,c,d;
+    scanf("%lf %lf", &b,&d);
+    a=(b-100)*0.9;
+    c=(d-a)*100/a;
+    if(c<=10)
+        printf("정상");
+    else if(c<=20)
+        printf("과체중");
+    else printf("비만");
+    return 0;
+}
