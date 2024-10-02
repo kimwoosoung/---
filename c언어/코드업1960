@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int f(int k) {
+    if (k == 0) {
+        return 0;
+    }
+    return (f(k-1) + k) % 137;
+}
+
+int main(void) {
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", ((n * (n + 1) / 2) + 1) % 137);
+    return 0;
+}
